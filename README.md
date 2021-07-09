@@ -1,27 +1,49 @@
-# Vue 3 + Typescript + Vite
+<p align='center'>
+  <img src='https://raw.githubusercontent.com/GueganVictor/GueganVictor/master/sonique.png' alt='Vue3-boilerplate'/>
+</p>
 
-This template should help get you started developing with Vue 3 and Typescript in Vite.
+<h4 align='center'>
+A Vue & Vite boilerplate application to kickstart your application
+</h4>
 
-## Recommended IDE Setup
+<hr/>
 
-[VSCode](https://code.visualstudio.com/) + [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur). Make sure to enable `vetur.experimental.templateInterpolationService` in settings!
+## Features
 
-### If Using `<script setup>`
+- ⚡️ [Vue 3](https://github.com/vuejs/vue-next), [Vite 2](https://github.com/vitejs/vite)
 
-[`<script setup>`](https://github.com/vuejs/rfcs/pull/227) is a feature that is currently in RFC stage. To get proper IDE support for the syntax, use [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) instead of Vetur (and disable Vetur).
+- 🗂 [VueRouter](https://router.vuejs.org/)
 
-## Type Support For `.vue` Imports in TS
+- 🗃 [VueX](https://next.vuex.vuejs.org/)
 
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can use the following:
+- 🎨 [Windi CSS](https://github.com/windicss/windicss)
 
-### If Using Volar
+- 😃 [Iconify](./src/components)
 
-Run `Volar: Switch TS Plugin on/off` from VSCode command palette.
+- 🌍 [I18n ready](https://github.com/antfu/vite-plugin-md)
 
-### If Using Vetur
+- 📦 [Components auto importing](https://github.com/antfu/vite-plugin-components)
 
-1. Install and add `@vuedx/typescript-plugin-vue` to the [plugins section](https://www.typescriptlang.org/tsconfig#plugins) in `tsconfig.json`
-2. Delete `src/shims-vue.d.ts` as it is no longer needed to provide module info to Typescript
-3. Open `src/main.ts` in VSCode
-4. Open the VSCode command palette
-5. Search and run "Select TypeScript version" -> "Use workspace version"
+- 📋 [TypeScript in the box](https://v3.vuejs.org/guide/typescript-support.html#typescript-support)
+
+<hr/>
+
+## Installation Steps
+
+### GitHub Template
+
+[Create a repo from this template on GitHub](https://github.com/GueganVictor/sonique/generate).
+
+### Clone to local
+
+If you prefer to do it manually with the cleaner git history
+
+```bash
+npx degit GueganVictor/sonique my-app
+cd my-app
+npm install
+```
+
+<hr/>
+
+## Have fun coding ! 🤖
