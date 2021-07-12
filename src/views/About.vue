@@ -36,19 +36,13 @@
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
+<script setup lang="ts">
 import { useRouter } from 'vue-router'
-export default defineComponent({
-  name: 'About',
-  setup() {
-    const router = useRouter()
-    const goToHome = () => {
-      router.push({ path: '/' })
-    }
-    return { goToHome }
-  },
-})
+
+const router = useRouter()
+const goToHome = () => {
+  router.push({ path: '/' })
+}
 </script>
 
 <style scoped></style>
