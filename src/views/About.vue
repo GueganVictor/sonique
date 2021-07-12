@@ -12,9 +12,11 @@
       sm:(py-4
       text-center
       items-center)
+      dark:(text-light-50
+      shadow-transparent)
     "
   >
-    <p class="text-lg text-black font-semibold">{{ $t('about') }}</p>
+    <p class="text-lg font-semibold">{{ $t('about') }}</p>
     <button
       @click="goToHome()"
       class="
