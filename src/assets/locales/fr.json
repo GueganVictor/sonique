@@ -1,8 +1,11 @@
 {
-  "about": "A propos",
+  "about": "À propos",
   "home": "Accueil",
   "language": "Langage",
   "link": "lien d'exemple",
   "go-to": "Aller à ",
-  "app-name": "Nom Application"
+  "app-name": "Nom Application",
+  "button": {
+    "toggle_dark": "Mode Sombre"
+  }
 }

@@ -1,49 +1,17 @@
 <template>
-  <div
-    class="
-      py-8
-      px-8
-      max-w-sm
-      mx-auto
-      mt-50
-      rounded-xl
-      shadow-md
-      space-y-2
-      sm:(py-4
-      text-center
-      items-center
-      )
-      dark:(text-light-50
-      shadow-transparent)
-    "
-  >
-    <p class="text-lg font-semibold">{{ $t('home') }}</p>
-    <button
-      @click="goToAbout()"
-      class="
-        px-4
-        py-1
-        text-purple-600
-        font-semibold
-        rounded-full
-        border border-purple-200
-        dark:(text-purple-400
-        border border-purple-600
-        )
-        hover:(!text-white
-        bg-purple-600
-        border-transparent)
-        focus:(outline-none
-        ring-2 ring-purple-600 ring-offset-2)
-      "
-    >
-      {{ $t('go-to') }} {{ $t('about') }}
-    </button>
+  <div class="flex content-center justify-center h-full items-center">
+    <div class="max-w-lg shadow-lg bg-orange-100 text-center md:min-w-150 px-15 py-10 rounded-md">
+      <p class="text-4xl font-semibold">{{ $t('home') }}</p>
+      <div class="pt-5">
+        <BigTextButton :text="$t('go-to') + ' ' + $t('about')" @click="goToAbout()"></BigTextButton>
+      </div>
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import { useRouter } from 'vue-router'
+import BigTextButton from '../components/BigTextButton.vue'
 const router = useRouter()
 const goToAbout = () => {
   router.push({ path: '/about' })

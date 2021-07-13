@@ -1,84 +1,34 @@
 <template>
-  <div class="dark:bg-dark-200 h-100vh">
-    <nav
-      class="
-        relative
-        flex flex-wrap
-        items-center
-        justify-between
-        px-2
-        py-3
-        navbar-expand-lg
-        bg-purple-500
-        mb-3
-      "
-    >
-      <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
-        <div class="w-full relative flex justify-between px-4">
-          <a
-            class="
-              text-sm
-              font-bold
-              leading-relaxed
-              inline-block
-              mr-4
-              py-2
-              whitespace-no-wrap
-              uppercase
-              text-white
-            "
-          >
-            {{ $t('app-name') }}
-          </a>
-          <div class="inline-flex">
-            <button
-              class="
-                text-white
-                cursor-pointer
-                text-xl
-                leading-none
-                px-3
-                py-1
-                border border-solid border-transparent
-                rounded
-                bg-transparent
-                block
-                outline-none
-                focus:outline-none
-              "
-              type="button"
-              @click="$i18n.locale = $i18n.locale === 'en' ? 'fr' : 'en'"
-            >
-              <icon-cif-fr v-if="$i18n.locale === 'fr'"></icon-cif-fr>
-              <icon-cif-gb v-if="$i18n.locale === 'en'"></icon-cif-gb>
-            </button>
-            <button
-              class="
-                text-white
-                cursor-pointer
-                text-xl
-                leading-none
-                px-3
-                py-1
-                border border-solid border-transparent
-                rounded
-                bg-transparent
-                block
-                outline-none
-                focus:outline-none
-              "
-              type="button"
-              :title="$t('button.toggle_dark')"
-              @click="toggleDark()"
-            >
-              <icon-carbon-moon v-if="isDark" />
-              <icon-carbon-sun v-else />
-            </button>
+  <div class="dark:bg-dark-200 bg-orange-200 h-screen w-screen">
+    <router-view></router-view>
+    <footer class="absolute bottom-0 w-screen pt-1 border-b-2 border-dark-200 dark:border-white">
+      <div class="container w-screen mx-auto px-6">
+        <div class="flex flex-col items-center">
+          <div class="sm:w-2/3 text-center block py-6">
+            <div>
+              <button
+                class="text-xl px-3 py-1 dark:text-white focus:outline-none"
+                type="button"
+                @click="$i18n.locale = $i18n.locale === 'en' ? 'fr' : 'en'"
+              >
+                <icon-clarity-language-line></icon-clarity-language-line>
+              </button>
+              <button
+                class="dark:text-white text-xl px-3 py-1 focus:outline-none"
+                type="button"
+                :title="$t('button.toggle_dark')"
+                @click="toggleDark()"
+              >
+                <icon-carbon-moon v-if="isDark" />
+                <icon-carbon-sun v-else />
+              </button>
+            </div>
+            <button></button>
+            <p class="text-sm dark:text-white font-bold mb-2">© 2021 Victor GUEGAN | MIT License</p>
           </div>
         </div>
       </div>
-    </nav>
-    <router-view></router-view>
+    </footer>
   </div>
 </template>
 

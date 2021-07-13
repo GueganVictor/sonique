@@ -1,8 +1,11 @@
 {
-  "about": "About",
-  "home": "Home",
+  "about": "Example About Page",
+  "home": "Home Page",
   "language": "Language",
   "link": "example link",
   "go-to": "Go to",
-  "app-name": "App Name"
+  "app-name": "App Name",
+  "button": {
+    "toggle_dark": "Dark Mode"
+  }
 }
