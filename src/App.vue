@@ -35,5 +35,3 @@
 <script setup lang="ts">
 import { isDark, toggleDark } from './modules/dark'
 </script>
-
-<style></style>

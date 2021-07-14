@@ -17,5 +17,3 @@ const goToAbout = () => {
   router.push({ path: '/about' })
 }
 </script>
-
-<style scoped></style>
