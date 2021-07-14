@@ -44,6 +44,15 @@ cd my-app
 npm install
 ```
 
+### Run the cleaning script
+
+Once everything is installed you can run the init.sh script. It's a small script that will clean the name of the project in the index.html title and package.json, as well as putting your name in the LICENSE file.
+
+```bash
+chmod u+x init.sh
+./init.sh
+```
+
 <hr/>
 
 ## Have fun coding ! 🤖
