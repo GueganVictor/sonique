@@ -6,10 +6,10 @@ const i18n = createI18n({
   locale: 'en', // set locale
   fallbackLocale: 'fr', // set fallback locale
   globalInjection: true,
-    messages: {
-        en,
-        fr
-  }
-})
+  messages: {
+    en,
+    fr,
+  },
+});
 
 export default i18n;
