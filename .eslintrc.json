@@ -9,12 +9,20 @@
       "error",
       {
         "singleline": {
-          "max": 2,
+          "max": 4,
           "allowFirstLine": true
         },
         "multiline": {
           "max": 2,
           "allowFirstLine": false
+        }
+      }
+    ],
+    "vue/html-self-closing": [
+      "error",
+      {
+        "html": {
+          "void": "always"
         }
       }
     ]
