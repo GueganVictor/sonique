@@ -10,11 +10,11 @@ A Vue & Vite boilerplate application to kickstart your application
 
 ## Features
 
-- ⚡️ [Vue 3](https://github.com/vuejs/vue-next), [Vite 2](https://github.com/vitejs/vite)
+- ⚡️  [Vue 3](https://github.com/vuejs/vue-next), [Vite 2](https://github.com/vitejs/vite)
 
 - 🗂 [VueRouter](https://router.vuejs.org/)
 
-- 🗃 [VueX](https://next.vuex.vuejs.org/)
+- 🍍 [Pinia](https://pinia.vuejs.org/)
 
 - 🎨 [Windi CSS](https://github.com/windicss/windicss)
 
