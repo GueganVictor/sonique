@@ -1,28 +1,23 @@
+import { fileURLToPath, URL } from 'node:url'
+
+import tailwindcss from '@tailwindcss/vite'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import Components from "unplugin-vue-components/vite";
-import Icons from "unplugin-icons/vite";
-import IconsResolver from "unplugin-icons/resolver";
-import ViteWindiCSS from "vite-plugin-windicss";
-import VitevueI18n from "@intlify/vite-plugin-vue-i18n";
-import vueI18n from '@intlify/vite-plugin-vue-i18n';
-import * as path from 'path';
+import vueDevTools from 'vite-plugin-vue-devtools'
 
-
-// https://vitejs.dev/config/
+// https://vite.dev/config/
 export default defineConfig({
   plugins: [
+    tailwindcss(),
     vue(),
-    ViteWindiCSS(),
-    vueI18n({
-      include: path.resolve(__dirname, './src/assets/locales/**'),
-    }),
-    Icons(),
-    Components({
-      resolvers: [IconsResolver({ componentPrefix: 'icon' })],
-    }),
-    VitevueI18n({
-      include: './src/assets/locales/',
-    }),
+    vueDevTools(),
   ],
-});
+  server: {
+    port: 3456,
+  },
+  resolve: {
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url))
+    },
+  },
+})

@@ -1,7 +1,8 @@
-import 'virtual:windi.css';
-import { createApp } from 'vue';
-import App from './App.vue';
-import i18n from './modules/i18n';
-import router from './modules/router';
+import { createApp } from 'vue'
 
-createApp(App).use(i18n).use(router).mount('#app');
+import App from './App.vue'
+import './style.css'
+
+const app = createApp(App)
+
+app.mount('#app')
